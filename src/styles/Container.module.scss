@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.container {
+  width: calc(100vw - $drawerClosed - 17px);
+  position: absolute;
+  left: $drawerClosed;
+  height: auto;
+  transition: 0.2s ease;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+  gap: 2rem;
+  top: 570px;
+}

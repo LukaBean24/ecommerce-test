@@ -1,0 +1,63 @@
+@import './variables.scss';
+$height: 70px;
+
+.sidedrawer {
+  position: fixed;
+  top: 70px;
+  width: $drawerClosed;
+  height: calc(100vh - $height);
+  background-color: $primary;
+  transition: 0.2s ease;
+  z-index: 10;
+}
+
+.expanded {
+  width: $drawerOpen;
+}
+
+.sidedrawer .icons {
+  height: 300px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sidedrawer .icons span {
+  background-color: $text;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.sidedrawer .icons span:hover {
+  background-color: yellow;
+}
+
+.sidedrawer .icons span .label {
+  display: none;
+}
+
+.expanded .icons {
+  align-items: flex-start;
+}
+
+.expanded .icons span {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 1rem;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.expanded .icons span .label {
+  display: flex;
+  margin-left: 1rem;
+}

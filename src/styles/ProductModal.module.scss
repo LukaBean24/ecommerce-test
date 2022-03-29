@@ -1,0 +1,57 @@
+@import './variables.scss';
+
+.modal-backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 98.9vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.493);
+  z-index: 999;
+}
+
+.modal {
+  width: 25%;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $primary;
+  display: grid;
+  grid-template-rows: 4fr 3fr;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  background-color: orange;
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 30px;
+  cursor: pointer;
+  color: $primary;
+  transition: 0.2s ease;
+}
+
+.icon:hover {
+  color: $text;
+}

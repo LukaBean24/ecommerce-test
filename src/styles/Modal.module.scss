@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+.modal {
+  position: absolute;
+  z-index: 99;
+  width: 50vw;
+  min-height: 150px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $text;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 98.9vw;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.562);
+}

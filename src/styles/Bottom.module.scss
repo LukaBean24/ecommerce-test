@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.bottom-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background-color: $primary;
+  color: $text;
+  font-family: $font;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom {
+  width: 50%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.bottom span {
+  height: 100%;
+  background-color: green;
+}
